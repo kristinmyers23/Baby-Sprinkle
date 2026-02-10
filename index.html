@@ -1,0 +1,249 @@
+<!-- baby-sprinkle.com — simple starter site
+     Save this as: index.html
+     Then upload to GitHub Pages / Netlify / Cloudflare Pages
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Baby Sprinkle ideas, invites, games, and checklists. Simple, sweet celebrations for second (or third!) babies." />
+  <title>Baby Sprinkle — Simple Celebration Ideas</title>
+
+  <!-- Basic social preview -->
+  <meta property="og:title" content="Baby Sprinkle" />
+  <meta property="og:description" content="Ideas, invites, games, and checklists for a sweet baby sprinkle." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://baby-sprinkle.com/" />
+
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.5;
+      background: #faf7ff;
+      color: #1b1b1f;
+    }
+    header {
+      padding: 56px 18px 28px;
+      text-align: center;
+      background: linear-gradient(180deg, #efe7ff, #faf7ff);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(99, 62, 180, .10);
+      color: #4c2aa6;
+      margin-bottom: 14px;
+    }
+    h1 { margin: 0 0 10px; font-size: 40px; }
+    .sub { margin: 0 auto; max-width: 760px; font-size: 18px; color: rgba(27,27,31,.78); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 22px 18px 44px; }
+    .ctaRow {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    button, a.btn {
+      appearance: none; border: 0; cursor: pointer;
+      padding: 12px 16px; border-radius: 12px;
+      font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .primary { background: #5a35d6; color: #fff; }
+    .primary:hover { filter: brightness(.96); }
+    .ghost {
+      background: transparent; color: #5a35d6;
+      border: 1px solid rgba(90,53,214,.28);
+    }
+    .ghost:hover { background: rgba(90,53,214,.06); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+    .card {
+      grid-column: span 6;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 10px 24px rgba(16, 0, 43, .06);
+    }
+    .card h2 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: rgba(27,27,31,.78); }
+    .pillList { display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
+    .pill {
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(90,53,214,.08);
+      color: #3d2791;
+    }
+
+    .section {
+      margin-top: 22px;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    form { display: grid; gap: 10px; margin-top: 12px; }
+    input, textarea {
+      width: 100%;
+      padding: 12px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.14);
+      font-size: 14px;
+      background: #fff;
+    }
+    textarea { min-height: 110px; resize: vertical; }
+    .small { font-size: 12px; color: rgba(27,27,31,.70); }
+
+    footer {
+      padding: 28px 18px;
+      text-align: center;
+      color: rgba(27,27,31,.65);
+      font-size: 13px;
+      border-top: 1px solid rgba(0,0,0,.06);
+    }
+
+    @media (max-width: 720px) {
+      h1 { font-size: 34px; }
+      .card { grid-column: span 12; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="tag">Baby Sprinkle</div>
+    <h1>Simple celebration ideas for your little one</h1>
+    <p class="sub">
+      Baby sprinkles are sweet, smaller gatherings — perfect for second (or third!) babies.
+      Grab quick ideas for invites, games, food, and a short “sprinkle registry” list.
+    </p>
+
+    <div class="ctaRow">
+      <a class="btn primary" href="#checklist">Get the free checklist</a>
+      <a class="btn ghost" href="#ideas">Browse ideas</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid" id="ideas">
+      <section class="card">
+        <h2>✨ Sprinkle Themes</h2>
+        <p>Fast, cute themes that don’t require a full baby shower budget.</p>
+        <div class="pillList">
+          <span class="pill">“Sprinkle &amp; Sip”</span>
+          <span class="pill">Books &amp; Blankets</span>
+          <span class="pill">Brunch &amp; Baby</span>
+          <span class="pill">Baby-Q Backyard</span>
+          <span class="pill">Pajamas &amp; Popsicles</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>🎉 Quick Game Ideas</h2>
+        <p>Keep it short and fun — 2–3 games is plenty.</p>
+        <div class="pillList">
+          <span class="pill">“Don’t Say Baby”</span>
+          <span class="pill">Baby Emoji Pictionary</span>
+          <span class="pill">Name That Lullaby</span>
+          <span class="pill">Guess the Due Date</span>
+          <span class="pill">Diaper Raffle</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>🍓 Easy Food</h2>
+        <p>Finger foods + one signature drink = done.</p>
+        <div class="pillList">
+          <span class="pill">Fruit cups</span>
+          <span class="pill">Mini sandwiches</span>
+          <span class="pill">Pasta salad</span>
+          <span class="pill">Cupcakes</span>
+          <span class="pill">Lemonade bar</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>🧸 “Sprinkle Registry” Basics</h2>
+        <p>Think essentials + restocks instead of big-ticket items.</p>
+        <div class="pillList">
+          <span class="pill">Diapers &amp; wipes</span>
+          <span class="pill">Pacifiers</span>
+          <span class="pill">Bottles</span>
+          <span class="pill">Swaddles</span>
+          <span class="pill">Onesies</span>
+        </div>
+      </section>
+    </div>
+
+    <section class="section" id="checklist">
+      <h2 style="margin:0 0 6px;">Free Baby Sprinkle Checklist</h2>
+      <p style="margin:0; color: rgba(27,27,31,.78);">
+        Pop in your email and I’ll give you a printable checklist + a short registry list.
+      </p>
+
+      <!-- NOTE: This form is "front-end only".
+           To make it actually email you, connect it to:
+           - Formspree (free tier), or
+           - Netlify Forms (free), or
+           - Google Forms link
+      -->
+      <form id="leadForm">
+        <input type="text" id="name" placeholder="Name (optional)" autocomplete="name" />
+        <input type="email" id="email" placeholder="Email (required)" autocomplete="email" required />
+        <button class="primary" type="submit">Send me the checklist</button>
+        <div class="small">
+          No spam. One email with the checklist, then you’re done.
+        </div>
+      </form>
+
+      <div id="msg" class="small" style="margin-top:10px;"></div>
+    </section>
+
+    <section class="section" id="sale" style="margin-top:14px;">
+      <h2 style="margin:0 0 6px;">Want this domain?</h2>
+      <p style="margin:0; color: rgba(27,27,31,.78);">
+        If you’re interested in buying <strong>baby-sprinkle.com</strong>, reach out:
+        <a href="mailto:hello@baby-sprinkle.com">hello@baby-sprinkle.com</a>
+      </p>
+      <p class="small" style="margin:10px 0 0;">
+        (Update this email to yours once your domain email is set up.)
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="yr"></span> Baby-Sprinkle.com • Simple ideas for sweet celebrations.
+  </footer>
+
+  <script>
+    // Tiny UX sugar (no backend)
+    document.getElementById("yr").textContent = new Date().getFullYear();
+
+    const form = document.getElementById("leadForm");
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      if (!email) return;
+
+      // Demo-only behavior. Replace with real form handling later.
+      msg.textContent = "Thanks! If this were connected to a form service, your checklist would be on the way 💜";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
